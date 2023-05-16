@@ -29,9 +29,8 @@ public class ItemEraser : MonoBehaviour
         
     }
     //必要のなくなったアイテムを削除
-    void OnTrriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("衝突：" + other.gameObject.tag);
         if (other.gameObject.tag == "CarTag")
         {
             Destroy(other.gameObject);
