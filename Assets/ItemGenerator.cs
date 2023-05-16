@@ -75,12 +75,5 @@ public class ItemGenerator : MonoBehaviour
     {
         
     }
-    //必要のなくなったアイテムを削除
-    private void OnCollisionEnter(Collision other)
-    {
-
-        Destroy(other.gameObject);
-
-    }
 
 }
